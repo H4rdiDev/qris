@@ -4,9 +4,27 @@ export default function handler(req, res) {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>qris</title>
+        <title>Gambar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+          body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+          }
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+          }
+        </style>
       </head>
-      <body style="margin:0;display:flex;justify-content:center;align-items:center;height:100vh;">
+      <body>
         <img src="/qris.png" alt="qris" />
       </body>
     </html>
